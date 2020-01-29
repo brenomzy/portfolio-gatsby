@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Portfolio`,
+    title: `Breno Daroz`,
     author: `Breno Daroz`,
     description: `Portfolio pessoal.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
@@ -44,6 +44,14 @@ module.exports = {
           `gatsby-remark-smartypants`,
         ],
       },
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Nunito Sans']
+        }
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
