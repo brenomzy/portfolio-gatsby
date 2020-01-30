@@ -38,12 +38,29 @@ class Layout extends React.Component {
         </nav>
         <div className="container mx-auto mt-32">
           <main className="mb-32">{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Feito com
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
         </div>
+        <footer className="py-4 bg-gray-100 border border-gray-300 flex justify-center">
+          <a
+            className="mr-6 text-sm font-semibold text-gray-900"
+            href="mailto:brenomzy@gmail.com"
+          >
+            Email
+          </a>
+          <a
+            className="mr-6 text-sm font-semibold text-gray-900"
+            href="https://www.linkedin.com/in/breno-daroz-74337b172/"
+            target="_blank"
+          >
+            Linkedin
+          </a>
+          <a
+            className="text-sm font-semibold text-gray-900"
+            href="https://twitter.com/brenomzy"
+            target="_blank"
+          >
+            Twitter
+          </a>
+        </footer>
       </>
     )
   }

@@ -13,7 +13,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
+        <SEO title="Portfolio" />
         <h1 className="text-7xl font-bold text-gray-900 mb-1">Breno Daroz</h1>
         <h2 className="text-5xl font-medium leading-tight tracking-tight text-gray-800 mb-4">
           <strong>UX/UI Designer.</strong>
