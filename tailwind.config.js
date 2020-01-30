@@ -10,6 +10,9 @@ module.exports = {
       zIndex: {
         "-1": "-1",
       },
+      spacing: {
+        card: "600px",
+      },
     },
   },
   variants: {},

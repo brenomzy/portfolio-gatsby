@@ -18,18 +18,15 @@ class BlogPostTemplate extends React.Component {
         />
         <article>
           <header>
-            <h1>
-              {post.frontmatter.title}
-            </h1>
-            <p>
-              {post.frontmatter.date}
-            </p>
+            <h1>{post.frontmatter.title}</h1>
+            <p>{post.frontmatter.date}</p>
           </header>
-          <section className="markdown-body" dangerouslySetInnerHTML={{ __html: post.html }} />
-          <hr/>
-          <footer>
-
-          </footer>
+          <section
+            className="markdown-body max-w-2xl mx-auto"
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
+          <hr />
+          <footer></footer>
         </article>
 
         <nav>
