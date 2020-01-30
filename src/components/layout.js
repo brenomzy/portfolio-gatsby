@@ -3,54 +3,41 @@ import { Link } from "gatsby"
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
-    let header
-
-    if (location.pathname === rootPath) {
-      header = (
-        <h1>
-          <Link
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h1>
-      )
-    } else {
-      header = (
-        <h3>
-          <Link
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h3>
-      )
-    }
+    const { children } = this.props
     return (
-      <div className="font-sans border-t-2 border-orange-500">
-        <div className="bg-white py-6">
-          <nav className="flex justify-between container mx-auto">
+      <>
+        <div className="antialiased border-t-2 border-orange-500">
+          <nav className="p-8 z-10 flex justify-between items-center fixed right-0 left-0 top-auto bottom-auto m-auto">
             <div>
-              {header}
+              <Link to="/">
+                <img
+                  className="h-8 w-8 rounded-full"
+                  src={"/avatar.jpg"}
+                  alt="Foto Breno"
+                />
+              </Link>
             </div>
-            <ul className="flex">
-              <li className="mr-8"><a href="#">Projetos</a></li>
-              <li className="mr-8"><a href="#">Sobre mim</a></li>
-              <li><a href="#">Contato</a></li>
-            </ul>
+            <div>
+              <ul className="flex">
+                <li className="mr-6">
+                  <Link to="/projetos">Projetos</Link>
+                </li>
+                <li>
+                  <Link to="/contato">Contato</Link>
+                </li>
+              </ul>
+            </div>
           </nav>
+          <div className="container mx-auto mt-32">
+            <main className="mb-32">{children}</main>
+            <footer>
+              © {new Date().getFullYear()}, Feito com
+              {` `}
+              <a href="https://www.gatsbyjs.org">Gatsby</a>
+            </footer>
+          </div>
         </div>
-        <div className="container mx-auto">
-          <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Feito com
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
-        </div>
-      </div>
+      </>
     )
   }
 }

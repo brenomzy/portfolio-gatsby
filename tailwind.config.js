@@ -1,10 +1,14 @@
 module.exports = {
   theme: {
     fontFamily: {
-      body: ['Nunito Sans', 'sans-serif'],
-  },
-    extend: {}
+      body: ["Inter", "sans-serif"],
+    },
+    extend: {
+      fontSize: {
+        "7xl": "6rem",
+      },
+    },
   },
   variants: {},
-  plugins: []
+  plugins: [],
 }
