@@ -13,11 +13,15 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
-        <h1 className="text-7xl font-bold text-gray-900 mb-4">Teste Teste</h1>
-        <h2 className="text-6xl font-medium leading-tight tracking-tight text-gray-800">
-          UX/UI Designer interessado em integrar o design como método de solução
-          de problemas nas mais diversas áreas da tecnologia.
+        <h1 className="text-7xl font-bold text-gray-900 mb-1">Breno Daroz</h1>
+        <h2 className="text-5xl font-medium leading-tight tracking-tight text-gray-800 mb-4">
+          <strong>UX/UI Designer.</strong>
         </h2>
+        <p className="max-w-xl text-gray-800 leading-relaxed mb-64">
+          Atualmente em Maringá-PR, criando e recriando experiências em
+          aplicações e websites. Interessado em integrar o design como método de
+          solução de problemas nas mais diversas áreas da tecnologia.
+        </p>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (

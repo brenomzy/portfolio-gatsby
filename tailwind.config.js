@@ -7,6 +7,9 @@ module.exports = {
       fontSize: {
         "7xl": "6rem",
       },
+      zIndex: {
+        "-1": "-1",
+      },
     },
   },
   variants: {},

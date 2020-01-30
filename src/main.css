@@ -1,4 +1,4 @@
-@import url('https://rsms.me/inter/inter.css');
+@import url("https://rsms.me/inter/inter.css");
 
 @tailwind base;
 
@@ -7,5 +7,9 @@
 @tailwind utilities;
 
 body {
-    @apply font-body
+  @apply font-body;
+}
+
+.transition {
+  transition: all 0.2s;
 }
