@@ -7,7 +7,7 @@ class Layout extends React.Component {
     return (
       <>
         <span className="-z-1 border-t-2 border-orange-500 fixed top-0 bottom-0 right-0 left-0"></span>
-        <nav className="p-8 z-10 flex justify-between items-center fixed right-0 left-0 top-0 bottom-auto m-auto">
+        <nav className="p-8 z-10 flex justify-between items-center fixed right-0 left-0 top-0 bottom-auto m-auto animated fadeInDown">
           <div>
             <Link to="/">
               <img
@@ -38,7 +38,7 @@ class Layout extends React.Component {
         </nav>
         <div className="flex flex-col min-h-screen">
           <div className="container mx-auto mt-32">
-            <main className="mb-32">{children}</main>
+            <main className="mb-32 animated fadeIn">{children}</main>
           </div>
           <footer className="py-4 bg-gray-100 border border-gray-300 flex justify-center mt-auto">
             <a
