@@ -29,7 +29,7 @@ class BlogIndex extends React.Component {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <article
-              className="flex justify-between pt-16 pl-16 max-w-full h-card bg-gray-900 shadow-lg rounded-lg transition mb-16"
+              className="flex justify-between pt-16 pl-16 max-w-full h-card bg-gray-900 shadow-lg rounded-lg transition mb-16 transition"
               key={node.fields.slug}
             >
               <div>
@@ -49,12 +49,14 @@ class BlogIndex extends React.Component {
                     }}
                   />
                 </section>
-                <button className="bg-orange-400 hover:bg-orange-300 hover:shadow rounded py-3 px-4 text-orange-900 font-bold mt-8 transition">
-                  <a href="#">Visitar website</a>
-                </button>
+                <Link to={node.fields.slug}>
+                  <button className="bg-orange-400 hover:bg-orange-300 hover:shadow rounded py-3 px-6 text-orange-900 font-bold mt-8 transition">
+                    Case study
+                  </button>
+                </Link>
               </div>
 
-              <div className="overflow-hidden -mt-8 rounded-lg">
+              <div className="overflow-hidden -mt-8 rounded-br-lg">
                 <BackgroundImage
                   fixed={node.frontmatter.featuredImage.childImageSharp.fixed}
                 />

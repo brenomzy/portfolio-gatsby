@@ -36,31 +36,40 @@ class Layout extends React.Component {
             </ul>
           </div>
         </nav>
-        <div className="container mx-auto mt-32">
-          <main className="mb-32">{children}</main>
+        <div className="flex flex-col min-h-screen">
+          <div className="container mx-auto mt-32">
+            <main className="mb-32">{children}</main>
+          </div>
+          <footer className="py-4 bg-gray-100 border border-gray-300 flex justify-center mt-auto">
+            <a
+              className="mr-6 text-sm font-semibold text-gray-900"
+              href="mailto:brenomzy@gmail.com"
+            >
+              Email
+            </a>
+            <a
+              className="mr-6 text-sm font-semibold text-gray-900"
+              href="https://www.linkedin.com/in/breno-daroz-74337b172/"
+              target="_blank"
+            >
+              Linkedin
+            </a>
+            <a
+              className="mr-6 text-sm font-semibold text-gray-900"
+              href="https://twitter.com/brenomzy"
+              target="_blank"
+            >
+              Twitter
+            </a>
+            <a
+              className="text-sm font-semibold text-gray-900"
+              href="https://github.com/brenomzy"
+              target="_blank"
+            >
+              Github
+            </a>
+          </footer>
         </div>
-        <footer className="py-4 bg-gray-100 border border-gray-300 flex justify-center">
-          <a
-            className="mr-6 text-sm font-semibold text-gray-900"
-            href="mailto:brenomzy@gmail.com"
-          >
-            Email
-          </a>
-          <a
-            className="mr-6 text-sm font-semibold text-gray-900"
-            href="https://www.linkedin.com/in/breno-daroz-74337b172/"
-            target="_blank"
-          >
-            Linkedin
-          </a>
-          <a
-            className="text-sm font-semibold text-gray-900"
-            href="https://twitter.com/brenomzy"
-            target="_blank"
-          >
-            Twitter
-          </a>
-        </footer>
       </>
     )
   }

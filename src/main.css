@@ -13,3 +13,8 @@ body {
 .transition {
   transition: all 0.2s;
 }
+
+a:hover {
+  @apply text-orange-500;
+  transition: all 0.2s;
+}

@@ -1,7 +1,9 @@
 ---
 title: My Second Post!
-date: "2015-05-06T23:46:37.121Z"
-featuredImage: carreiras_img.png
+date: "2020"
+description: Redesign e melhoria na usabilidade de um dos produtos já existentes da empresa.
+role: UX/UI Designer
+featuredImage: pedido_img.png
 ---
 
 Wow! I love blogging so much already.
