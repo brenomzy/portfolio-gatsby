@@ -3,7 +3,7 @@ title: Carreiras - Sabium Sistemas
 date: "2020"
 description: Criação do site de vagas da empresa, foco na simplicidade visual e facilidade de cadastro para as vagas.
 role: UX/UI Designer
-featuredImage: carreiras_img.png
+featuredImage: carreiras-sabium_img.png
 ---
 
 Far far away, behind the word mountains, far from the countries Vokalia and

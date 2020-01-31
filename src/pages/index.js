@@ -56,7 +56,7 @@ class BlogIndex extends React.Component {
                 </Link>
               </div>
 
-              <div className="overflow-hidden -mt-8 rounded-br-lg">
+              <div className="overflow-hidden -mt-16">
                 <BackgroundImage
                   fixed={node.frontmatter.featuredImage.childImageSharp.fixed}
                 />
@@ -92,7 +92,7 @@ export const pageQuery = graphql`
             role
             featuredImage {
               childImageSharp {
-                fixed(width: 697, height: 586) {
+                fixed(width: 700, height: 600) {
                   ...GatsbyImageSharpFixed
                 }
               }

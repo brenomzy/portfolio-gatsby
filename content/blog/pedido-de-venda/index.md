@@ -1,9 +1,9 @@
 ---
-title: My Second Post!
+title: Pedido de venda - Web/Mobile
 date: "2020"
 description: Redesign e melhoria na usabilidade de um dos produtos já existentes da empresa.
 role: UX/UI Designer
-featuredImage: pedido_img.png
+featuredImage: pedido-de-venda_img.png
 ---
 
 Wow! I love blogging so much already.
