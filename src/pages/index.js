@@ -1,5 +1,6 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import BackgroundImage from "gatsby-background-image"
 
 import Layout from "../components/layout"
@@ -37,7 +38,9 @@ class BlogIndex extends React.Component {
               <div>
                 <header>
                   <h3 className="text-2xl text-white font-bold">
-                    <Link to={node.fields.slug}>{title}</Link>
+                    <AniLink cover to={node.fields.slug} bg="#1A202C">
+                      {title}
+                    </AniLink>
                   </h3>
                   <p className="text-gray-200 uppercase tracking-wider font-medium mb-16">
                     {node.frontmatter.role} - {node.frontmatter.date}
@@ -51,11 +54,11 @@ class BlogIndex extends React.Component {
                     }}
                   />
                 </section>
-                <Link to={node.fields.slug}>
+                <AniLink cover to={node.fields.slug} bg="#1A202C">
                   <button className="bg-orange-400 hover:bg-orange-300 hover:shadow rounded py-3 px-6 text-orange-900 font-bold mt-8 transition">
                     Case study
                   </button>
-                </Link>
+                </AniLink>
               </div>
 
               <div className="overflow-hidden -mt-16">
