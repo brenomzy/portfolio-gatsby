@@ -38,7 +38,12 @@ class BlogIndex extends React.Component {
               <div>
                 <header>
                   <h3 className="text-2xl text-white font-bold">
-                    <AniLink cover to={node.fields.slug} bg="#1A202C">
+                    <AniLink
+                      cover
+                      direction="down"
+                      to={node.fields.slug}
+                      bg="#1A202C"
+                    >
                       {title}
                     </AniLink>
                   </h3>
@@ -54,7 +59,12 @@ class BlogIndex extends React.Component {
                     }}
                   />
                 </section>
-                <AniLink cover to={node.fields.slug} bg="#1A202C">
+                <AniLink
+                  cover
+                  direction="down"
+                  to={node.fields.slug}
+                  bg="#1A202C"
+                >
                   <button className="bg-orange-400 hover:bg-orange-300 hover:shadow rounded py-3 px-6 text-orange-900 font-bold mt-8 transition">
                     Case study
                   </button>

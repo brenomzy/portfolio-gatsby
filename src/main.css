@@ -18,3 +18,7 @@ a:hover {
   @apply text-orange-500;
   transition: all 0.2s;
 }
+
+.active {
+  @apply text-orange-500;
+}

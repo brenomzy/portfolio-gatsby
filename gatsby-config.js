@@ -53,6 +53,15 @@ module.exports = {
         //trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Portfolio - Breno Daroz`,
+        short_name: `Breno Daroz`,
+        start_url: `/`,
+        icon: `content/assets/favicon.png`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-transition-link`,

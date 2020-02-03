@@ -1,5 +1,6 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -25,24 +26,44 @@ class BlogPostTemplate extends React.Component {
             className="markdown-body max-w-2xl mx-auto"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
-          <hr />
+          <hr className="mt-6" />
           <footer></footer>
         </article>
 
-        <nav>
-          <ul>
+        <nav className="mt-16">
+          <ul className="flex justify-between">
             <li>
               {previous && (
-                <Link to={previous.fields.slug} rel="prev">
-                  ← {previous.frontmatter.title}
-                </Link>
+                <AniLink
+                  className="text-gray-900 tracking-wider"
+                  cover
+                  direction="right"
+                  to={previous.fields.slug}
+                  rel="prev"
+                  bg="#1A202C"
+                >
+                  <p className="font-bold tracking-wider text-gray-700">
+                    ￩ Anterior
+                  </p>
+                  {previous.frontmatter.title}
+                </AniLink>
               )}
             </li>
             <li>
               {next && (
-                <Link to={next.fields.slug} rel="next">
-                  {next.frontmatter.title} →
-                </Link>
+                <AniLink
+                  className="text-gray-900 tracking-wider"
+                  cover
+                  direction="left"
+                  to={next.fields.slug}
+                  rel="next"
+                  bg="#1A202C"
+                >
+                  <p className="font-bold tracking-wider text-gray-700">
+                    Próximo ￫
+                  </p>
+                  {next.frontmatter.title}
+                </AniLink>
               )}
             </li>
           </ul>
