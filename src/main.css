@@ -11,14 +11,21 @@ body {
 }
 
 .transition {
-  transition: all 0.2s;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+a {
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 
 a:hover {
   @apply text-orange-500;
-  transition: all 0.2s;
 }
 
 .active {
   @apply text-orange-500;
+}
+
+.effect:hover {
+  transform: translateY(-3px);
 }
