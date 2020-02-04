@@ -5,7 +5,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-class BlogPostTemplate extends React.Component {
+class CaseStudyTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
@@ -21,17 +21,18 @@ class BlogPostTemplate extends React.Component {
           <header>
             <h1>{post.frontmatter.title}</h1>
             <p>{post.frontmatter.date}</p>
+            <p>{post.frontmatter.contributions}</p>
           </header>
           <section
             className="markdown-body max-w-2xl mx-auto"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
-          <hr className="mt-6" />
+          <hr className="container mx-auto mt-6" />
           <footer></footer>
         </article>
 
         <nav className="mt-16">
-          <ul className="flex justify-between">
+          <ul className="container flex justify-between mx-auto">
             <li>
               {previous && (
                 <AniLink
@@ -73,7 +74,7 @@ class BlogPostTemplate extends React.Component {
   }
 }
 
-export default BlogPostTemplate
+export default CaseStudyTemplate
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -88,8 +89,9 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "YYYY")
         description
+        contributions
       }
     }
   }

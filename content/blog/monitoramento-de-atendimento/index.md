@@ -1,7 +1,8 @@
 ---
-title: Hello World
-date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
+title: Monitoramento de Atendimento
+date: "2020"
+role: "UX/UI Designer"
+description: Ferramenta interna para visualização em tempo real do andamento e situação dos atendimentos de cada setor.
 featuredImage: carreiras_img.png
 ---
 
