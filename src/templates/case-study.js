@@ -18,13 +18,28 @@ class CaseStudyTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
         />
         <article>
-          <header>
-            <h1>{post.frontmatter.title}</h1>
-            <p>{post.frontmatter.date}</p>
-            <p>{post.frontmatter.contributions}</p>
+          <header className="bg-gray-100 py-16">
+            <div className="flex justify-between container mx-auto">
+              <div>
+                <h1 className="text-xl font-bold text-gray-900">
+                  {post.frontmatter.title}
+                </h1>
+                <p className="mt-4 max-w-lg text-gray-700">
+                  {post.frontmatter.description}
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900">
+                  Minhas contribuições:
+                </h3>
+                <p className="mt-4 max-w-lg text-gray-700">
+                  {post.frontmatter.contributions}
+                </p>
+              </div>
+            </div>
           </header>
           <section
-            className="markdown-body max-w-2xl mx-auto"
+            className="mt-32 markdown-body max-w-3xl mx-auto"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
           <hr className="container mx-auto mt-6" />
