@@ -71,15 +71,15 @@ class Layout extends React.Component {
             </ul>
           </div>
         </nav>
-        <div className="flex flex-col min-h-screen">
-          <div className="mt-32">
+        <div className="flex flex-col">
+          <div className="mt-24">
             <main id="projetos" className="mb-32 animated fadeIn">
               {children}
             </main>
           </div>
-          <footer className="py-12 bg-gray-100 border border-gray-300 flex justify-center mt-auto">
+          <footer className="py-12 bg-gray-900 flex justify-center mt-auto">
             <a
-              className="mr-6 text-sm font-semibold text-gray-900 effect inline-block"
+              className="mr-6 text-sm font-semibold text-gray-100 effect inline-block"
               href="https://www.linkedin.com/in/breno-daroz-74337b172/"
               target="_blank"
               rel="noopener noreferrer"
@@ -100,7 +100,7 @@ class Layout extends React.Component {
               </svg>
             </a>
             <a
-              className="mr-6 text-sm font-semibold text-gray-900 effect inline-block"
+              className="mr-6 text-sm font-semibold text-gray-100 effect inline-block"
               href="https://twitter.com/brenomzy"
               target="_blank"
               rel="noopener noreferrer"
@@ -121,7 +121,7 @@ class Layout extends React.Component {
               </svg>
             </a>
             <a
-              className="text-sm font-semibold text-gray-900 effect inline-block"
+              className="text-sm font-semibold text-gray-100 effect inline-block"
               href="https://github.com/brenomzy"
               target="_blank"
               rel="noopener noreferrer"

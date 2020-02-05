@@ -12,7 +12,7 @@ featuredImage: carreiras-sabium_img.png
 Quando iniciei meu trabalho na Sabium, o site corporativo da empresa era também onde os interessados se candidatavam para as vagas disponíveis.
 Este era o fluxo e design do processo completo para enviar seu currículo e se candidatar para uma vaga:
 
-![Fluxo de cadastro antigo](/fluxo-antigo.png)
+![Fluxo de cadastro antigo](/fluxo-atual.png)
 
 - 1. Clicar no botão **"Trabalhe Conosco"**
 - 2. Selecionar a vaga que deseja
@@ -30,16 +30,16 @@ A necessidade de um site visualmente moderno e atrativo é clara para maiores co
 Decidimos que a navegação do novo site precisaria ser simples e de fácil acesso para os candidatos. Além disso o design moderno e mais limpo nos auxiliaria em demonstrar nossos benefícios e valores como empresa.
 Ao entrar no site, o candidato já possui logo de cara as opções de visualizar as vagas disponíveis, ou, caso já esteja no processo, fazer seu login. Além disso já é apresentado um texto sobre nossos valores e missão.
 
-![Header do novo site](/header-site.png)
-![Site com modal de login/cadastro](/header-site-modal.png)
+![Header do novo site](/header.png)
+![Site com modal de login/cadastro](/header-modal.png)
 
 > _Agora ao clicar em um dos botões de Login ou Cadastro, um modal é aberto na mesma página._
 
 Mais abaixo o site apresenta alguns dos nossos benefícios, que são essenciais para a avaliação da empresa por parte dos candidatos.
 Logo abaixo estão todas as vagas disponíveis no momento, com um botão para maiores informações e também uma opção de realizar seu cadastro e deixar o currículo em nosso banco de dados, caso nenhuma das vagas se encaixe no seu perfil atualmente.
 
-![Benefícios da empresa](/beneficios-site.png)
-![Vagas disponíveis](/vagas-site.png)
+![Benefícios da empresa](/beneficios.png)
+![Vagas disponíveis](/vagas.png)
 
 ## Conclusão
 
