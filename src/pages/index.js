@@ -116,7 +116,7 @@ export const pageQuery = graphql`
             role
             featuredImage {
               childImageSharp {
-                fixed(width: 700, height: 600) {
+                fixed(quality: 90, width: 700, height: 600) {
                   ...GatsbyImageSharpFixed
                 }
               }
