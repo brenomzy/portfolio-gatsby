@@ -36,8 +36,7 @@ class Layout extends React.Component {
 
     return (
       <>
-        <span className="-z-1 border-t-2 border-orange-500 fixed top-0 bottom-0 right-0 left-0 animated fadeIn"></span>
-        <nav className="p-8 z-10 flex justify-between items-center fixed right-0 left-0 top-0 bottom-auto m-auto animated fadeIn">
+        <nav className="border-t-2 border-orange-500 p-8 z-10 flex justify-between items-center fixed right-0 left-0 top-0 bottom-auto m-auto animated fadeIn">
           <div>
             <AniLink cover direction="up" to="/" bg="#ED8936">
               <img

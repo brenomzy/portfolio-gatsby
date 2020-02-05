@@ -9,11 +9,13 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content/cases`,
+        name: `cases`,
       },
     },
     {
@@ -31,12 +33,11 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 768,
+              quality: 80,
               linkImagesToOriginal: false,
             },
           },
-          {
-            resolve: `gatsby-remark-images-medium-zoom`,
-          },
+          `gatsby-remark-images-zoom`,
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
@@ -49,8 +50,6 @@ module.exports = {
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
