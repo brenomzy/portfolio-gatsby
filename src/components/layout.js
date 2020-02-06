@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, animateScroll as scroll } from "react-scroll"
+import { Link } from "react-scroll"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const activeStyle = {
@@ -47,7 +47,7 @@ class Layout extends React.Component {
             </AniLink>
           </div>
           <div>
-            <ul className="flex items-center">
+            <ul className="hidden lg:flex items-center">
               <li className="mr-6 font-semibold text-gray-900">{projetos}</li>
               <li className="mr-6 font-semibold text-gray-900">
                 <AniLink
@@ -69,6 +69,24 @@ class Layout extends React.Component {
                 </a>
               </li>
             </ul>
+            <div className="lg:hidden flex items-center bg-gray-900 py-2 h-10 rounded">
+              <AniLink
+                className="flex h-10 px-6 rounded-tl rounded-bl text-sm text-center items-center font-semibold text-gray-100 border-r border-gray-700"
+                activeStyle={activeStyle}
+                cover
+                direction="down"
+                to="/sobre"
+                bg="#F7FAFC"
+              >
+                Sobre
+              </AniLink>
+              <a
+                className="pr-6 pl-4 flex h-10 text-sm items-center font-semibold text-gray-100"
+                href="mailto:brenomzy@gmail.com"
+              >
+                Contato
+              </a>
+            </div>
           </div>
         </nav>
         <div className="flex flex-col">
