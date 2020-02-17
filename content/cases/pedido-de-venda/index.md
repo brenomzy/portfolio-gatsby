@@ -49,3 +49,11 @@ A solução proposta oferece um modelo de descoberta progressiva, onde inicialme
 Além disso, o processo de seleção do cliente é destacado logo abaixo, caso ainda não possua um selecionado pela navegação geral.
 
 **Dados de entrega**
+
+(imgs)
+
+Nesta tela foi melhorada apenas a disposição dos campos do formulário, o design dos campos da Rota e da opção de cobrança de frete.
+
+**Dados de pagamento**
+
+(imgs)
