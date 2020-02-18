@@ -9,11 +9,11 @@ class Sobre extends React.Component {
       <Layout location={this.props.location}>
         <SEO title="Sobre" />
         <div className="bg-gray-100">
-          <div className="container mx-auto py-16">
-            <h2 className="text-7xl font-bold text-gray-900 mb-1 relative">
+          <div className="container max-w-mobile mx-4 md:mx-auto py-8 md:py-16">
+            <h2 className="text-3xl md:text-7xl font-bold text-gray-900 mb-1 relative">
               Olá, meu nome é Breno<span className="text-orange-400">.</span>
             </h2>
-            <p className="mt-12 text-gray-900 text-xl leading-relaxed max-w-3xl">
+            <p className="mt-12 text-gray-900 text-base md:text-xl leading-relaxed md:max-w-3xl">
               Sou um UX/UI & Frontend Designer de Maringá-PR, focado em criar
               experiências e solucionar problemas com design. Faço parte da
               internet criando websites desde a era em que se usavam{" "}
@@ -25,7 +25,7 @@ class Sobre extends React.Component {
               .
             </p>
 
-            <p className="mt-6 text-gray-900 text-xl leading-relaxed max-w-3xl">
+            <p className="mt-6 text-gray-900 text-base md:text-xl leading-relaxed md:max-w-3xl">
               Desenvolvo wireframes, protótipos e experiências prontas para uso
               que melhoram a facilidade de aprendizado com visuais modernos e
               acessíveis. No meu tempo livre, gosto de aprender novas
@@ -41,7 +41,7 @@ class Sobre extends React.Component {
               , que utilizei para desenvolver este website.
             </p>
 
-            <p className="mt-6 text-gray-900 text-xl leading-relaxed max-w-3xl">
+            <p className="mt-6 text-gray-900 text-base md:text-xl leading-relaxed max-w-3xl">
               Trabalho atualmente na{" "}
               <a
                 className="font-semibold text-red-600"
@@ -57,8 +57,8 @@ class Sobre extends React.Component {
           </div>
         </div>
 
-        <div className="container mx-auto">
-          <h3 className="mt-16 font-semibold text-gray-900 text-lg leading-relaxed max-w-3xl">
+        <div className="container max-w-mobile mx-4 md:mx-auto">
+          <h3 className="mt-8 md:mt-16 font-semibold text-gray-900 text-base md:text-lg leading-relaxed max-w-3xl">
             Seguem abaixo alguns dos softwares e tecnologias que tenho utilizado
             ultimamente:
           </h3>

@@ -12,6 +12,7 @@ module.exports = {
       },
       spacing: {
         card: "600px",
+        mobile: "328px",
       },
     },
   },

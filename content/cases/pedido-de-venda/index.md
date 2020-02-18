@@ -1,5 +1,5 @@
 ---
-title: Pedido de venda - Web/Mobile
+title: Pedido de venda - Mobile
 date: "2020"
 description: Redesign e melhoria na usabilidade de um dos produtos já existentes da empresa, com foco no fluxo de venda.
 role: UX/UI Designer
