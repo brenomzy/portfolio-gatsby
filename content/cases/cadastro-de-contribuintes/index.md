@@ -1,0 +1,36 @@
+---
+title: Cadastro de Contribuintes
+date: "2020"
+role: "UX/UI Designer"
+description: Redesign de uma tela de cadastro de contribuintes de Delphi para Web.
+contributions: UX/UI Design, Prototipagem
+featuredImage: cadastro-de-contribuintes_img.png
+---
+
+# Contexto Geral
+
+Como todo redesign ou readaptação de um sistema legacy como Delphi para web, minhas primeiras atividades foram relacionadas à analisar o que já funciona atualmente e o que pode ser melhorado aproveitando a flexibilidade que temos no navegador.
+
+A principal funcionalidade que decidi manter foram as tabs, elas mostram com clareza quais são os tipos de informação que o usuário pode preencher em todo o cadastro, poupando também um espaço importante de tela e diminuindo a carga cognitiva de um cadastro extenso como este de contribuinte.
+
+A próxima decisão importante e visual que tomei foi em relação à navegação superior da tela, que permite ao usuário realizar um novo cadastro, buscar um existente ou excluir o que foi selecionado. Nesta parte troquei essas funções principais por botões com apenas o nome da ação, assim como o botão de Salvar alterações como único elemento em verde da tela, que pode servir também para treinar o usuário a usar o sistema como um todo seguindo o padrão em telas de cadastros diferentes. Esta navegação é fixa no código.
+
+Logo abaixo vem o principal componente, o container que possui todos os formulários da tela que podem ser preenchidos. Com o contexto atual que tenho e a forma como a tela é disposta, assumi que havendo um botão de Salvar alterações sempre disponível nos poupa da necessidade de diferenciar campos entre obrigatórios e/ou opcionais, pois o usuário pode sempre voltar para este cadastro e completar com novas informações baseado na necessidade. (algo que pode ser confirmado em testes com usuário)
+
+### Aba Pessoa
+
+Na aba de Pessoa várias mudanças foram feitas, a de menor impacto é relacionada ao posicionamento nos campos de formulário, na questão de usabilidade é sempre sugerido que formulários longos tenham apenas uma direção vertical, para facilitar escaneamento pelo usuário e melhor navegação, porém, em nosso caso, isso viria com um preço alto em relação a legibilidade e fadiga em monitores de resolução menor. A label também foi alterada para cima dos form fields para facilitar o escaneamento e leitura.
+
+Sendo assim, os campos foram dispostos em 3 colunas, com suas relações maiores ocorrendo na posição horizontal, por exemplo: RG - Data de Emissão - Emissor - UF (todos relacionados ao RG). Além disso, os radio buttons que alteram o Tipo de Pessoa são os controladores de quais campos ficam ou não inativados, como CPF para pessoa física e CNPJ para pessoa jurídica. Por fim, na análise decidi que a aba de **Imagem** poderia ser trazida para a de Pessoa, assim como os **Dados profissionais**, que são diretamente relacionados à pessoa ou empresa sendo cadastrada como contribuinte.
+
+![Antes e depois da aba Pessoa](/pessoa.png)
+
+### Endereços, Contatos e Bancos
+
+As abas de **endereço**, **contatos** e **bancos** podem ser explicadas como sendo uma só, pois compartilham exatamente a mesma funcionalidade. Um problema existente no sistema delphi é o número de passos existentes para cadastros simples de CRUD como estes, exigindo um clique para abrir a tela de adição, um para sair e outros dois cliques na mesma linha caso o cadastro precise ser editado.
+
+Na versão web esses formulários de cadastro estarão sempre visíveis para o usuário, apenas com um botão de ação que será alterado baseado no que o usuário deseja realizar. Ao digitar os dados para um novo tipo de endereço/contato/conta, poderá clicar no botão de ação e adicionar um card que contém as informações principais do cadastro. Este card possui ações de edição e exclusão, assim como uma tag para informar se aquele registro em si é o que vai ser utilizado como padrão para o contribuinte (selecionado no cadastro do mesmo), este último passo exclui a necessidade de existir um espaço na aba de Pessoa específico para mostrar quais são os **endereços/contato/conta padrões**, que possuía anteriormente abas idênticas e com os mesmos nomes das principais, que poderiam trazer pequenos problemas de confusão no usuário. Se o usuário apenas quiser ter as informações todas do registro sem editá-las, o ato de clicar no card carrega o formulário com as informações atuais sem mudar a nomenclatura do botão de “**Adicionar**” para “**Alterar**”.
+
+![Antes e depois da aba Endereços](/enderecos.png)
+![Antes e depois da aba Contatos](/contatos.png)
+![Antes e depois da aba Bancos](/bancos.png)
