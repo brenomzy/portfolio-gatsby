@@ -74,7 +74,7 @@ class Layout extends React.Component {
           </div>
         </nav>
         <div className="flex flex-col">
-          <div className="mt-24">
+          <div className="mt-16">
             <main id="projetos" className="mb-16 md:mb-32">
               {children}
             </main>

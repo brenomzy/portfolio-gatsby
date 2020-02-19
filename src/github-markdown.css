@@ -54,10 +54,9 @@
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   color: #24292e;
-  line-height: 1.5;
   font-family: Inter, sans-serif;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.8;
   word-wrap: break-word;
 }
 
