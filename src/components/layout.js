@@ -36,7 +36,7 @@ class Layout extends React.Component {
 
     return (
       <>
-        <nav className="z-50 md:bg-white md:shadow-md border-t-2 border-orange-500 p-8 z-10 flex justify-between items-center fixed right-0 left-0 top-0 bottom-auto m-auto">
+        <nav className="z-50 transparent-white shadow-xl border-t-2 border-orange-500 px-8 py-4 z-10 flex justify-between items-center fixed right-0 left-0 top-0 bottom-auto m-auto">
           <div>
             <AniLink cover direction="up" to="/" bg="#ED8936">
               <img
@@ -47,9 +47,11 @@ class Layout extends React.Component {
             </AniLink>
           </div>
           <div>
-            <ul className="hidden lg:flex items-center">
-              <li className="mr-6 font-semibold text-gray-900">{projetos}</li>
-              <li className="mr-6 font-semibold text-gray-900">
+            <ul className="flex items-center">
+              <li className="mr-6 uppercase text-sm tracking-widest text-gray-900">
+                {projetos}
+              </li>
+              <li className="mr-6 uppercase text-sm tracking-widest text-gray-900">
                 <AniLink
                   activeStyle={activeStyle}
                   cover
@@ -62,31 +64,13 @@ class Layout extends React.Component {
               </li>
               <li>
                 <a
-                  className="bg-gray-900 hover:bg-gray-800 text-sm font-semibold text-gray-100 transition py-3 px-6 rounded hover:text-white hover:shadow-md"
+                  className="mr-6 uppercase text-sm tracking-widest text-gray-900"
                   href="mailto:brenomzy@gmail.com"
                 >
                   Contato
                 </a>
               </li>
             </ul>
-            <div className="lg:hidden flex items-center bg-gray-900 py-2 h-10 rounded">
-              <AniLink
-                className="flex h-10 px-6 rounded-tl rounded-bl text-sm text-center items-center font-semibold text-gray-100 border-r border-gray-700"
-                activeStyle={activeStyle}
-                cover
-                direction="down"
-                to="/sobre"
-                bg="#F7FAFC"
-              >
-                Sobre
-              </AniLink>
-              <a
-                className="pr-6 pl-4 flex h-10 text-sm items-center font-semibold text-gray-100"
-                href="mailto:brenomzy@gmail.com"
-              >
-                Contato
-              </a>
-            </div>
           </div>
         </nav>
         <div className="flex flex-col">

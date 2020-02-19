@@ -23,7 +23,7 @@ class PortfolioIndex extends React.Component {
             <h2 className="text-xl md:text-5xl font-medium leading-tight tracking-tight text-gray-800 mb-4">
               <strong>UX/UI Designer.</strong>
             </h2>
-            <p className="text-sm md:text-base max-w-xl text-gray-800 leading-relaxed mb-16 md:mb-64">
+            <p className="text-sm md:text-base max-w-xl text-gray-800 leading-relaxed mb-16 md:mb-32">
               Atualmente em Maringá-PR, criando e recriando experiências em
               aplicações e websites. Interessado em integrar o design como
               método de solução de problemas nas mais diversas áreas da
