@@ -8,6 +8,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "animate.css": "^3.7.2",
     "gatsby": "^2.19.7",
     "gatsby-background-image": "^0.9.13",
     "gatsby-cli": "^2.8.29",

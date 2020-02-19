@@ -17,7 +17,7 @@ class CaseStudyTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <article>
+        <article className="animated fadeIn">
           <header className="bg-gray-100 py-16 px-4">
             <div className="flex justify-between w-mobile md:w-full container mx-auto">
               <div>
