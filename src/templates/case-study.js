@@ -39,7 +39,7 @@ class CaseStudyTemplate extends React.Component {
             </div>
           </header>
           <section
-            className="mt-16 md:mt-32 markdown-body max-w-mobile md:max-w-3xl mx-4 md:mx-auto"
+            className="mt-16 md:mt-32 markdown-body max-w-mobile md:max-w-5xl mx-4 md:mx-auto"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
           <hr className="container mx-auto mt-6" />
