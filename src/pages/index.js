@@ -15,7 +15,7 @@ class PortfolioIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Portfolio" />
-        <div className="container w-mobile md:w-full mx-4 md:mx-auto">
+        <div className="container w-mobile md:w-full px-4 mx-auto">
           <div>
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-1">
               Breno Daroz
@@ -32,13 +32,13 @@ class PortfolioIndex extends React.Component {
           </div>
         </div>
 
-        <h2 className="container mx-4 md:mx-auto text-5xl font-bold text-gray-900 mb-8">
+        <h2 className="text-center md:text-left container px-4 mx-auto text-5xl font-bold text-gray-900 mb-8">
           Meus projetos
         </h2>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <div className="container w-mobile md:w-full mx-4 md:mx-auto">
+            <div className="container w-mobile md:w-full px-4 mx-auto">
               <article
                 className="flex justify-between p-8 md:pt-16 md:pl-16 md:pb-0 md:pr-0 md:max-w-full h-auto md:h-card bg-gray-900 shadow-lg rounded-lg transition mb-8 md:mb-16 transition"
                 key={node.fields.slug}

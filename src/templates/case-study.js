@@ -18,7 +18,7 @@ class CaseStudyTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
         />
         <article>
-          <header className="bg-gray-100 py-16">
+          <header className="bg-gray-100 py-16 px-4">
             <div className="flex justify-between w-mobile md:w-full container mx-auto">
               <div>
                 <h1 className="text-sm md:text-xl font-bold text-gray-900">
@@ -39,7 +39,7 @@ class CaseStudyTemplate extends React.Component {
             </div>
           </header>
           <section
-            className="mt-16 md:mt-32 markdown-body max-w-mobile md:max-w-5xl mx-4 md:mx-auto"
+            className="mt-16 md:mt-32 markdown-body max-w-mobile md:max-w-5xl px-4 mx-auto"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
           <hr className="container mx-auto mt-6" />
@@ -47,7 +47,7 @@ class CaseStudyTemplate extends React.Component {
         </article>
 
         <nav className="mt-16">
-          <ul className="w-mobile md:w-full container flex justify-between mx-auto">
+          <ul className="w-mobile md:w-full container flex justify-between px-4 mx-auto">
             <li>
               {previous && (
                 <Link
