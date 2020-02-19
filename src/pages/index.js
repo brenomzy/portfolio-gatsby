@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+import { Link } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 
 import Layout from "../components/layout"
@@ -16,7 +16,7 @@ class PortfolioIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Portfolio" />
         <div className="container w-mobile md:w-full mx-4 md:mx-auto">
-          <div className="animated fadeIn">
+          <div>
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-1">
               Breno Daroz
             </h1>
@@ -40,20 +40,13 @@ class PortfolioIndex extends React.Component {
           return (
             <div className="container w-mobile md:w-full mx-4 md:mx-auto">
               <article
-                className="flex justify-between p-8 md:pt-16 md:pl-16 md:max-w-full h-auto md:h-card bg-gray-900 shadow-lg rounded-lg transition mb-8 md:mb-16 transition"
+                className="flex justify-between p-8 md:pt-16 md:pl-16 md:pb-0 md:pr-0 md:max-w-full h-auto md:h-card bg-gray-900 shadow-lg rounded-lg transition mb-8 md:mb-16 transition"
                 key={node.fields.slug}
               >
                 <div>
                   <header>
                     <h3 className="text-lg md:text-2xl text-white font-bold">
-                      <AniLink
-                        cover
-                        direction="down"
-                        to={node.fields.slug}
-                        bg="#1A202C"
-                      >
-                        {title}
-                      </AniLink>
+                      <Link to={node.fields.slug}>{title}</Link>
                     </h3>
                     <p className="text-gray-200 text-sm md:text-base uppercase tracking-wider font-medium mb-4 md:mb-16">
                       {node.frontmatter.role} - {node.frontmatter.date}
@@ -67,19 +60,14 @@ class PortfolioIndex extends React.Component {
                       }}
                     />
                   </section>
-                  <AniLink
-                    cover
-                    direction="down"
-                    to={node.fields.slug}
-                    bg="#1A202C"
-                  >
+                  <Link to={node.fields.slug}>
                     <button className="bg-orange-400 hover:bg-orange-300 hover:md-shadow rounded py-3 px-6 text-orange-900 font-bold mt-6 md:mt-8 effect transition">
                       Case study
                     </button>
-                  </AniLink>
+                  </Link>
                 </div>
 
-                <div className="hidden md:block -mt-16">
+                <div className="hidden md:block md:max-w-sm lg:max-w-full md:overflow-hidden lg:block -mt-16">
                   <BackgroundImage
                     fixed={node.frontmatter.featuredImage.childImageSharp.fixed}
                   />

@@ -36,7 +36,7 @@ class Layout extends React.Component {
 
     return (
       <>
-        <nav className="border-t-2 border-orange-500 p-8 z-10 flex justify-between items-center fixed right-0 left-0 top-0 bottom-auto m-auto animated fadeIn">
+        <nav className="z-50 md:bg-white md:shadow-md border-t-2 border-orange-500 p-8 z-10 flex justify-between items-center fixed right-0 left-0 top-0 bottom-auto m-auto">
           <div>
             <AniLink cover direction="up" to="/" bg="#ED8936">
               <img
@@ -91,7 +91,7 @@ class Layout extends React.Component {
         </nav>
         <div className="flex flex-col">
           <div className="mt-24">
-            <main id="projetos" className="mb-16 md:mb-32 animated fadeIn">
+            <main id="projetos" className="mb-16 md:mb-32">
               {children}
             </main>
           </div>

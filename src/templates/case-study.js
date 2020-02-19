@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -50,36 +50,30 @@ class CaseStudyTemplate extends React.Component {
           <ul className="w-mobile md:w-full container flex justify-between mx-auto">
             <li>
               {previous && (
-                <AniLink
+                <Link
                   className="text-xs md:text-base text-gray-900 tracking-wider"
-                  cover
-                  direction="right"
                   to={previous.fields.slug}
                   rel="prev"
-                  bg="#1A202C"
                 >
                   <p className="text-sm md:text-base font-bold tracking-wider text-gray-700">
                     ￩ Anterior
                   </p>
                   {previous.frontmatter.title}
-                </AniLink>
+                </Link>
               )}
             </li>
             <li className="text-right">
               {next && (
-                <AniLink
+                <Link
                   className="text-xs md:text-base text-gray-900 tracking-wider"
-                  cover
-                  direction="left"
                   to={next.fields.slug}
                   rel="next"
-                  bg="#1A202C"
                 >
                   <p className="text-sm md:text-base font-bold tracking-wider text-gray-700">
                     Próximo ￫
                   </p>
                   {next.frontmatter.title}
-                </AniLink>
+                </Link>
               )}
             </li>
           </ul>
