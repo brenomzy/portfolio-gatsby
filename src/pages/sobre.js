@@ -9,8 +9,8 @@ class Sobre extends React.Component {
       <Layout location={this.props.location}>
         <SEO title="Sobre" />
         <div className="bg-gray-100">
-          <div className="container max-w-mobile mx-4 md:mx-auto py-8 md:py-16">
-            <h2 className="text-3xl md:text-7xl font-bold text-gray-900 mb-1 relative">
+          <div className="container max-w-mobile px-4 mx-auto py-8 md:py-16">
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-1 relative">
               Olá, meu nome é Breno<span className="text-orange-400">.</span>
             </h2>
             <p className="mt-12 text-gray-900 text-base md:text-xl leading-relaxed md:max-w-3xl">
@@ -57,7 +57,7 @@ class Sobre extends React.Component {
           </div>
         </div>
 
-        <div className="container max-w-mobile mx-4 md:mx-auto">
+        <div className="container max-w-mobile px-4 mx-auto">
           <h3 className="mt-8 md:mt-16 font-semibold text-gray-900 text-base md:text-lg leading-relaxed max-w-3xl">
             Seguem abaixo alguns dos softwares e tecnologias que tenho utilizado
             ultimamente:
