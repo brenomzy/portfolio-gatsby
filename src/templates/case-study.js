@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Link } from "gatsby"
-import BackgroundImage from "gatsby-background-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -20,11 +19,6 @@ class CaseStudyTemplate extends React.Component {
         />
         <article className="animated fadeIn">
           <header className="bg-gray-100 py-16 px-4">
-            <div className="hidden">
-              <BackgroundImage
-                fixed={post.frontmatter.featuredImage.childImageSharp.fixed}
-              />
-            </div>
             <div className="flex justify-between w-mobile md:w-full container mx-auto">
               <div>
                 <h1 className="text-sm md:text-xl font-bold text-gray-900">
