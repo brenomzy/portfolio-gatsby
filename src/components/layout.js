@@ -36,8 +36,8 @@ class Layout extends React.Component {
 
     return (
       <>
-        <nav className="z-50 transparent-white shadow-xl border-t-2 border-orange-500 px-8 py-4 z-10 flex justify-between items-center fixed right-0 left-0 top-0 bottom-auto m-auto">
-          <div>
+        <nav className="z-50 transparent-white shadow-xl border-t-2 border-orange-500 px-8 py-4 z-10 flex justify-center md:justify-between items-center fixed right-0 left-0 top-0 bottom-auto m-auto">
+          <div className="hidden md:block">
             <AniLink cover direction="up" to="/" bg="#ED8936">
               <img
                 className="h-8 w-8 rounded-full"

@@ -15,7 +15,7 @@ class PortfolioIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Portfolio" />
-        <div className="container w-mobile md:w-full px-4 mx-auto animated fadeIn">
+        <div className="container w-mobile md:w-full px-4 mx-auto animated fadeIn mt-16">
           <div>
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-1">
               Breno Daroz
