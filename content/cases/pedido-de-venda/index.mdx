@@ -7,6 +7,16 @@ contributions: Wireframing, Prototipagem, UX/UI Design
 featuredImage: pedido-de-venda_img.png
 ---
 
+import ZoomImage from 'components/ZoomImage'
+
+import DadosDeEntrega from './dados-de-entrega.jpg';
+import DadosDePagamento from './dados-de-pagamento.jpg';
+import Finalizar from './finalizar.jpg';
+import FluxoVendaAntigo from './fluxo-venda-antigo.png';
+import PaginaDeCarrinho from './pagina-de-carrinho.jpg';
+import PaginaDeProduto from './pagina-de-produto.jpg';
+import ProcessoDesktop from './processo-desktop.png';
+
 Minha primeira tarefa após estar familiarizado com a empresa foi de repensar a interface e usabilidade do sistema de Pedido de Venda. Este é o produto que oferecemos às lojas de varejo para vendas presenciais, dentro da loja.
 É um produto complexo e ligado à um ERP, que gera muitas regras de negócio específicas e possibilidades de customização baseado nas necessidades de cada cliente.
 Sendo assim, decidi estudar o fluxo do sistema e começar as mudanças pelo que considerei mais importante:
@@ -15,7 +25,7 @@ Sendo assim, decidi estudar o fluxo do sistema e começar as mudanças pelo que 
 
 Estas eram as principais telas do fluxo de venda:
 
-![Fluxo de venda antigo](/fluxo-venda-antigo.png)
+<ZoomImage src={FluxoVendaAntigo} alt='Fluxo de vendas antigo' />
 
 > _O principal uso deste produto é por celular ou tablet, apesar de tê-lo feito também em modo desktop, irei focar nas mudanças e design mobile._
 
@@ -35,25 +45,29 @@ Abaixo irei separar a lista criada anteriormente em explicações para cada deci
 
 ### Tela do produto:
 
-![Nova tela de produto](/pagina-de-produto.jpg)
+<ZoomImage src={PaginaDeProduto} alt='Nova tela de produto' />
+
 Nesta tela as mudanças foram na maioria estéticas, deixei o visual mais padronizado como uma tela de produto, melhorei a hierarquia dos elementos e criei inputs com label definidas para os campos de **Filial** e **Locais de Saldo**, que anteriormente eram botões que não comunicavam nenhum tipo de ação ou clareza. Aqui também fica claro que para prosseguir com a adição do produto, é necessário escolher uma das opções que estão acima.
 As especificações e detalhes técnicos continuam com uma funcionalidade de acordeões, mas agora um pouco mais evidentente no padrão visual.
 
 ### O carrinho:
 
-![Nova tela de carrinho](/pagina-de-carrinho.jpg)
+<ZoomImage src={PaginaDeCarrinho} alt='Nova tela de carrinho' />
+
 Esta tela foi totalmente repensada, primeiramente a imagem que existia tomava o espaço total da tela, da mesma forma que na tela do Produto; por ser uma tela de carrinho, é preciso considerar que existe a possibilidade de diversos produtos existirem ao mesmo tempo.
 A solução proposta oferece um modelo de descoberta progressiva, onde inicialmente só são apresentadas as principais informações sobre cada produto e serviço para o usuário, caso seja necessária alguma alteração específica em algum deles, a opção "_Editar no carrinho_" presente no menu de três pontos verticais levará o usuário para uma tela onde todas as informações do produto podem ser visualizadas e/ou alteradas.
 Além disso, o processo de seleção do cliente é destacado logo abaixo, caso ainda não possua um selecionado pela navegação geral.
 
 ### Dados de entrega:
 
-![Nova tela de dados de entrega](/dados-de-entrega.jpg)
+<ZoomImage src={DadosDeEntrega} alt='Nova tela de dados de entrega' />
+
 Nesta tela foi melhorada apenas a disposição dos campos do formulário, o design dos campos da Rota e da opção de cobrança de frete.
 
 ### Dados de pagamento:
 
-![Nova tela de dados de pagamento](/dados-de-pagamento.jpg)
+<ZoomImage src={DadosDePagamento} alt='Nova tela de pagamento' />
+
 Aqui o principal objetivo foi de separar claramente os pagamentos na entrada de pagamentos parcelados, para isso foram feitos os dois formulários com título mais direto, além de cada um dos pagamentos gerados terem seu próprio estilo de card.
 Nos pagamentos parcelados existem tags caso possua seguro ou uma promoção vinculada ao mesmo.
 Essa tela foi onde tive o maior bloqueio e muitas iterações, principalmente pelo fato de que cada loja possui suas formas específicas de lidar com promoções, pagamentos e seguros.
@@ -61,7 +75,8 @@ Ainda não é a solução final, mas acredito que estamos seguindo no caminho co
 
 ### Finalizar pedido:
 
-![Nova tela de finalizar pedido](/finalizar.jpg)
+<ZoomImage src={Finalizar} alt='Nova tela de finalizar pedido' />
+
 Assim como na tela de dados de entrega, o objetivo nesta tela foi de melhor organização das informações.
 Uma adição que não existia foi a de um "Resumo do carrinho", que mostra os produtos e valores da venda, permitindo também voltar à tela de carrinho e editar informações, caso necessário.
 
@@ -71,4 +86,4 @@ O pedido de venda é um desafio muito interessante, essas mudanças ainda não c
 
 Abaixo estão as imagens das soluções apresentadas acima em desktop:
 
-![Processo de venda - Desktop](/processo-desktop.png)
+<ZoomImage src={ProcessoDesktop} alt='Processo de venda - Desktop' />

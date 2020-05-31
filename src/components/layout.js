@@ -20,7 +20,7 @@ class Layout extends React.Component {
           to="projetos"
           spy={true}
           smooth={true}
-          offset={550}
+          offset={370}
           duration={500}
         >
           Projetos
