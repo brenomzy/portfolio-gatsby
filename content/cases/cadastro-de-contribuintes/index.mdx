@@ -7,9 +7,12 @@ contributions: UX/UI Design, Prototipagem
 featuredImage: cadastro-de-contribuintes_img.png
 ---
 
-import React from 'react'
-import Zoom from 'react-medium-image-zoom'
-import 'react-medium-image-zoom/dist/styles.css'
+import ZoomImage from 'components/ZoomImage'
+
+import Pessoa from './pessoa.png';
+import Enderecos from './enderecos.png';
+import Contatos from './contatos.png';
+import Bancos from './bancos.png';
 
 # Contexto Geral
 
@@ -27,7 +30,8 @@ Na aba de Pessoa várias mudanças foram feitas, a de menor impacto é relaciona
 
 Sendo assim, os campos foram dispostos em 3 colunas, com suas relações maiores ocorrendo na posição horizontal, por exemplo: RG - Data de Emissão - Emissor - UF (todos relacionados ao RG). Além disso, os radio buttons que alteram o Tipo de Pessoa são os controladores de quais campos ficam ou não inativados, como CPF para pessoa física e CNPJ para pessoa jurídica. Por fim, na análise decidi que a aba de **Imagem** poderia ser trazida para a de Pessoa, assim como os **Dados profissionais**, que são diretamente relacionados à pessoa ou empresa sendo cadastrada como contribuinte.
 
-![Antes e depois da aba Pessoa](/pessoa.png)
+
+<ZoomImage src={Pessoa} alt='Cadastro de pessoas' />
 
 
 ### Endereços, Contatos e Bancos
@@ -36,6 +40,6 @@ As abas de **endereço**, **contatos** e **bancos** podem ser explicadas como se
 
 Na versão web esses formulários de cadastro estarão sempre visíveis para o usuário, apenas com um botão de ação que será alterado baseado no que o usuário deseja realizar. Ao digitar os dados para um novo tipo de endereço/contato/conta, poderá clicar no botão de ação e adicionar um card que contém as informações principais do cadastro. Este card possui ações de edição e exclusão, assim como uma tag para informar se aquele registro em si é o que vai ser utilizado como padrão para o contribuinte (selecionado no cadastro do mesmo), este último passo exclui a necessidade de existir um espaço na aba de Pessoa específico para mostrar quais são os **endereços/contato/conta padrões**, que possuía anteriormente abas idênticas e com os mesmos nomes das principais, que poderiam trazer pequenos problemas de confusão no usuário. Se o usuário apenas quiser ter as informações todas do registro sem editá-las, o ato de clicar no card carrega o formulário com as informações atuais sem mudar a nomenclatura do botão de “**Adicionar**” para “**Alterar**”.
 
-![Antes e depois da aba Endereços](/enderecos.png)
-![Antes e depois da aba Contatos](/contatos.png)
-![Antes e depois da aba Bancos](/bancos.png)
+<ZoomImage src={Enderecos} alt='Antes e depois da aba Endereços' />
+<ZoomImage src={Contatos} alt='Antes e depois da aba Contatos' />
+<ZoomImage src={Bancos} alt='Antes e depois da aba Bancos' />
