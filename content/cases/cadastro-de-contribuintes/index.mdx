@@ -7,6 +7,10 @@ contributions: UX/UI Design, Prototipagem
 featuredImage: cadastro-de-contribuintes_img.png
 ---
 
+import React from 'react'
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
 # Contexto Geral
 
 Como todo redesign ou readaptação de um sistema legacy como Delphi para web, minhas primeiras atividades foram relacionadas à analisar o que já funciona atualmente e o que pode ser melhorado aproveitando a flexibilidade que temos no navegador.
@@ -24,6 +28,7 @@ Na aba de Pessoa várias mudanças foram feitas, a de menor impacto é relaciona
 Sendo assim, os campos foram dispostos em 3 colunas, com suas relações maiores ocorrendo na posição horizontal, por exemplo: RG - Data de Emissão - Emissor - UF (todos relacionados ao RG). Além disso, os radio buttons que alteram o Tipo de Pessoa são os controladores de quais campos ficam ou não inativados, como CPF para pessoa física e CNPJ para pessoa jurídica. Por fim, na análise decidi que a aba de **Imagem** poderia ser trazida para a de Pessoa, assim como os **Dados profissionais**, que são diretamente relacionados à pessoa ou empresa sendo cadastrada como contribuinte.
 
 ![Antes e depois da aba Pessoa](/pessoa.png)
+
 
 ### Endereços, Contatos e Bancos
 
