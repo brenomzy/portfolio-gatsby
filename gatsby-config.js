@@ -37,7 +37,6 @@ module.exports = {
               linkImagesToOriginal: false,
             },
           },
-          `gatsby-remark-images-zoom`,
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
